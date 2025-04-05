@@ -1,0 +1,16 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "The website for Simpatico",
+  "author": "",
+  "license": "ISC",
+
+  "type": "module",
+  "scripts": {
+    "start": "simpatico",
+    "test" : "node ./test.js"
+  },
+  "dependencies": {
+    "simpatico": "file:../simpatico"
+  }
+}

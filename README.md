@@ -1,0 +1,1 @@
+This is the repository for the Simpatico website, hosted at [simpatico.io](https://simpatico.io).
