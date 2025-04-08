@@ -18,10 +18,6 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  github-markdown-css@5.8.1:
-    resolution: {integrity: sha512-8G+PFvqigBQSWLQjyzgpa2ThD9bo7+kDsriUIidGcRhXgmcaAWUIpCZf8DavJgc+xifjbCG+GvMyWr0XMXmc7g==}
-    engines: {node: '>=10'}
-
   readdirp@4.1.2:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
@@ -51,14 +47,11 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  github-markdown-css@5.8.1: {}
-
   readdirp@4.1.2: {}
 
   simpatico@file:../simpatico:
     dependencies:
       chokidar: 4.0.3
-      github-markdown-css: 5.8.1
       webcryptobox: 4.0.0
       ws: 8.18.1
     transitivePeerDependencies:
