@@ -30,6 +30,9 @@ packages:
     resolution: {directory: ../simpatico, type: directory}
     hasBin: true
 
+  webcryptobox@4.0.0:
+    resolution: {integrity: sha512-XnFfVQsZiQYFCzgF3QVfQFrCInZcCcbJHfzY8wAIatqbnHOSOLGsczV1w+z/ZLwQhsl9EWeow5znTYN7Fx+AcQ==}
+
   ws@8.18.1:
     resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
     engines: {node: '>=10.0.0'}
@@ -56,9 +59,12 @@ snapshots:
     dependencies:
       chokidar: 4.0.3
       github-markdown-css: 5.8.1
+      webcryptobox: 4.0.0
       ws: 8.18.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  webcryptobox@4.0.0: {}
 
   ws@8.18.1: {}
