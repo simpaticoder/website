@@ -26,8 +26,8 @@ packages:
     resolution: {directory: ../simpatico, type: directory}
     hasBin: true
 
-  webcryptobox@4.0.0:
-    resolution: {integrity: sha512-XnFfVQsZiQYFCzgF3QVfQFrCInZcCcbJHfzY8wAIatqbnHOSOLGsczV1w+z/ZLwQhsl9EWeow5znTYN7Fx+AcQ==}
+  tweetnacl@1.0.3:
+    resolution: {integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==}
 
   ws@8.18.1:
     resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
@@ -52,12 +52,12 @@ snapshots:
   simpatico@file:../simpatico:
     dependencies:
       chokidar: 4.0.3
-      webcryptobox: 4.0.0
+      tweetnacl: 1.0.3
       ws: 8.18.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  webcryptobox@4.0.0: {}
+  tweetnacl@1.0.3: {}
 
   ws@8.18.1: {}

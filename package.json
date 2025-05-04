@@ -7,7 +7,7 @@
 
   "type": "module",
   "scripts": {
-    "start": "simpatico",
+    "start": "simpatico '{ \"hostname\": \"simpatico.dev\",\"useTls\": true,\"cert\": \"simpatico.dev.crt.pem\",\"key\": \"simpatico.dev.key.pem\", \"http\":80, \"https\":443, \"ws\":443}'",
     "test" : "node ./test.js"
   },
   "dependencies": {
