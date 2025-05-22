@@ -7,7 +7,8 @@
 
   "type": "module",
   "scripts": {
-    "start": "simpatico '{ \"hostname\": \"simpatico.dev\",\"useTls\": true,\"cert\": \"simpatico.dev.crt.pem\",\"key\": \"simpatico.dev.key.pem\", \"http\":80, \"https\":443, \"ws\":443}'",
+    "start": "simpatico",
+    "start-prod": "simpatico '{ \"hostname\": \"simpatico.io\",\"useTls\": true,\"cert\": \"/etc/letsencrypt/live/simpatico.io/fullchain.pem\",\"key\": \"/etc/letsencrypt/live/simpatico.io/privkey.pem\", \"http\":80, \"https\":443, \"ws\":443, \"debug\":false}'",
     "test" : "node ./test.js"
   },
   "dependencies": {

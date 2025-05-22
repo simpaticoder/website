@@ -1,0 +1,9 @@
+{
+  "hostname": "simpatico.dev",
+  "useTls": true,
+  "cert": "simpatico.dev.crt.pem",
+  "key": "simpatico.dev.key.pem",
+  "http": 80,
+  "https": 443,
+  "runAsUser": "josh"
+}
