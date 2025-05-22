@@ -1,6 +1,16 @@
+# Print a staircase coding challenge
 
+Basically they wanted you to write a function that print out something like this for `n=4`:
 
-Make a staircase. Hardest part was losing the initial space with shift.
+```text
+   #
+  ##
+ ###
+####
+```
+
+It was simple to solve but I initially forgot to lose the initial space!
+
 ```js
 function staircase(n) {
     const result = [];
@@ -18,6 +28,10 @@ function staircase(n) {
 }
 ```
 
+# Compute partial sums
+This was specified as adding all the elements of an array except one, and finding the smallest and largest such sum.
+My solution computed the total sum of the array, mapped the array by subtracting that elt from the sum, and sorting.
+Got it on the first try, too!
 
 ```js
 function miniMaxSum(arr) {

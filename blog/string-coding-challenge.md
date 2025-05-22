@@ -1,15 +1,18 @@
 @simpaticoder 2025
 
-Got an interview question today that asked me:
+# A string coding challenge 
+
+Got an challenge question today that asked me:
 
 >write an algorithm that takes two strings and returns the indices of the first string that can be removed such that it is equal to the second string. The strings always differ in length by 1. If they never match return `[-1]`
 
 The most straightforward idea is to break the strings into characters and then do a comparison of each character, skipping over an index in the longer string (`str1`). This is solution 1. 
 
-However things got interesting when they required it to be high performing code. I managed to make it linear time in solution 2.
+Things got interesting when they required it to be high-performing code. I managed to make it linear time in solution 2.
 
 ## Setup and tests
-I am by no means a "TDD" guy, but I do like to write tests, especially for little puzzles like this. I find it helps me understand the problem boundary much better. It's also a huge help to work with my tools rather than theirs, in those strange web-based coding tools that have none of the comforts (and many of the footguns) of "home".
+I am by no means a "TDD" guy, but I do like to write tests, especially for little puzzles like this. I find it helps me understand the problem boundary much better. 
+It's also a huge help to work with my tools rather than theirs, those strange, quirky, feature-poor web-based coding tools.
 
 ```js
 window.tests = [
@@ -20,7 +23,7 @@ window.tests = [
 ]
 ```
 ## Solution 0 - Simplest, Slowest, Slice
-This is the simplest solution, but it's slow. `slice()` creates a new string, and so does `+` concat.
+This is the simplest solution, but it's memory inefficient. `slice()` creates a new string, and so does `+` concat.
 
 ```js
 function computeIndices(str1, str2) {
